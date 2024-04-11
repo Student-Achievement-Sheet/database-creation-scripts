@@ -11,5 +11,5 @@ CREATE TABLE achievements (
    is_approved BOOLEAN DEFAULT FALSE NOT NULL,
    created_at TIMESTAMP DEFAULT current_timestamp NOT NULL,
    CONSTRAINT achievements_category_id_constr FOREIGN KEY (achievements_category_id) REFERENCES achievements_category(id),
-   CONSTRAINT users_id_constr FOREIGN KEY (user_id) REFERENCES users(id), 
+   CONSTRAINT users_id_constr FOREIGN KEY (user_id) REFERENCES users(id)
 );
